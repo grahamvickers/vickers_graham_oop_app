@@ -30,7 +30,7 @@
     // un comment const button for content showing v1 (if working)
 
     //const buttons = document.querySelectorAll(".button");
-    // const recipeData = document.querySelector("#recipeContainer");
+    //const recipeData = document.querySelector('#recipeContainer');
 
 
     // recipes.forEach(recipe =>{
@@ -131,7 +131,7 @@
 		back.addEventListener("click", frwdImg, false); 
 		frwd.addEventListener("click", backImg, false);
 
-	})();
+	})()
 
 
 
