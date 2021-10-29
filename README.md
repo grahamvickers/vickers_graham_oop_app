@@ -14,7 +14,9 @@ You will need to install the following in order to run the website:
 
 copy and paste the following into your terminal: 
 
-git clone https://github.com/grahamvickers/vickers_graham_js_game.git
+```
+$ git clone https://github.com/grahamvickers/vickers_graham_js_game.git
+```
 
 #### Deployment 
 
