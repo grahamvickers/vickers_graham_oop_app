@@ -174,9 +174,17 @@ nav ul{
 	z-index: 2;
 	animation: pulses .3 infinite;
 	cursor: pointer;
-	max-width: 30px;
+    width: 30px;
+	max-width: 32px;
+    transition: ease-in-out .3s;
+}
+#back:hover{
+    width: 32px;
 }
 
+#frwd:hover{
+    width: 32px;
+}
 #frwd
 {
 	position: absolute;
@@ -185,7 +193,9 @@ nav ul{
 	z-index: 2;
 	animation: pulses 3 infinite;
 	cursor: pointer;
-	max-width: 30px;
+    width: 30px;
+	max-width: 32px;
+    transition: ease-in-out .3s;
 }
 
 /* all index blog content */
