@@ -31,6 +31,12 @@ p {
     font-size: 22px;
 }
 
+
+/* recipe hides */
+
+#beef{
+    display: none;
+}
 /* all header customizations */
 
 #promo{
@@ -144,6 +150,41 @@ nav ul{
 .recipeCon img{
     width: 200px;
     height: auto;
+}
+
+/* gallery area */
+
+#gallery
+{
+	position: relative;
+	margin-top: 60px;
+}
+#galImage{
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#back
+{
+	position: absolute;
+	top: 50%;
+	left: 2%;
+	z-index: 2;
+	animation: pulses .3 infinite;
+	cursor: pointer;
+	max-width: 30px;
+}
+
+#frwd
+{
+	position: absolute;
+	top: 50%;
+	right: 2%;
+	z-index: 2;
+	animation: pulses 3 infinite;
+	cursor: pointer;
+	max-width: 30px;
 }
 
 /* all index blog content */
@@ -272,27 +313,12 @@ footer p{
     font-weight: 400;
 }
 
-/* all blog.html content is below */
 
-.postInfo{
-    font-size: 16px;
-    font-weight: 200;
-}
 
-#editor{
-    width: 50px;
-    height: auto;
-}
-
-#postContent p{
-
-    padding: 40px;
-    margin-bottom: none;
-}
-
-/* all recipe page content is below */
+/* all recipe  content is below */
 #recipeContainer{
     padding: 30px 40px 30px 40px;
+    /*  display: none; */
 }
 
 .recipeInfo{

@@ -7,12 +7,14 @@
 <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 <link rel="stylesheet" href="https://use.typekit.net/rau6bmr.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
 </head>
 <body>
+
     <h1 class="hidden">Welcome To Get Smokin'</h1>
     <section id="promo">
         <h2 class="hidden">PROMO</h2>
-        <p>JOIN OUR MAILING LIST TODAY & GET 10% OFF MERCH</p>
+        <p>JOIN OUR MAILING LIST TODAY & GET 10% OFF MERCH!</p>
     </section>
     <header>
         <img src="images/logo_v1.svg" alt="Get Smokin' logo" id="logo">
@@ -20,8 +22,8 @@
             <nav id="mainNav">
                 <h3 class="hidden">Main Navigation</h3>
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">BLOG</a></li>
                     <li><a href="recipes.html">RECIPES</a></li>
                 </ul>
             </nav>
@@ -33,37 +35,145 @@
 
         <section id="landing">
             <div id="landingCon">
-                <h2>CHICKEN RECIPES</h2>
-                <p>Enjoy our chef curated chicken recipes that go great on any smoker or bbq you have at your hands!
+                <h2>THE ART AND CRAFT BEHIND LIVE FIRE COOKING.</h2>
+                <p>Cooking with a live fire heat source is a true craft to master and can daunting 
+                    to new comers, but with my help I will make it a breeze.
+                    So grab a cold beer, some quality meat and let’s get cooking!
                 </p>
             </div>
-            <img src="images/chicken_platter.jpg" alt="chicken platter" id="landingImg">
+            <!-- <img src="images/brisket.jpg" alt="brisket" id="landingImg"> -->
         </section>
+        <section id="gallery">
+			<h2 class="hidden">Photo Gallery</h2>
+			<img src="images/back.svg" alt="previous image" id="back">
+			<img src="images/next.svg" alt="next image" id="frwd">
+			<img
+			id="galImage"
+			sizes="100vw"
+			srcset="images/brisket.jpg,
+			src="images/brisket.jpg"
+			alt="brisket">	
+		</section>
 
-        <section id="recipeContainer">
+        <section id="recipes">
+            <h2>OUR RECIPES</h2>
 
-            <!-- OOP content will be loaded here -->
+            <div id="recipeBoxes">
+        
+                <div class="recipeCon">
+                    <img src="images/chicken.png" alt="Chicken">
+                    <a  class="button" data-btn="0">CHICKEN</a>
+                    <!-- <button class="button" data-btn="0">CHICKEN</button> -->
+                </div>
 
+                <div class="recipeCon">
+                    <img src="images/steak.png" alt="BEEF">
+                    <a  class="button" data-btn="1">BEEF</a>
+                </div>
             
 
+                <div class="recipeCon">
+                    <img src="images/sausage.png" alt="Pork">
+                    <a  class="button" data-btn="2">PORK</a>
+                </div>
+
+                <div class="recipeCon">
+                    <img src="images/fish.png" alt="fish">
+                    <a  class="button" data-btn="3">FISH</a>
+                </div>
+                
+            </div>
         </section>
 
+        <section class="recipeContainer hidden">
+            <!-- dynamically load in selected recipes from buttons aboves -->
+            <div class="recipeInfo">
+                <h2>Authentic Jamaican Jerk Chicken</h2>
+                <p>
+                    A true classic with Authentic flavours you can taste!
+                </p>
+                <p class="moreInfo">Prep time: 8 hours</p>
+                <p class="costP moreInfo">Cost: $$</p>
+                <a href="#" class="button recipeBtn">▶ READ MORE</a>
+            </div>
+
+            <div class="recipeInfo">
+                <h2>Kansas City Spatchcock Chicken</h2>
+                <p>
+                    A great dinner for a summer night BBQ with friends!
+                </p>
+                <p class="moreInfo">Prep time: 3.5 hours</p>
+                <p class="costP moreInfo">Cost: $$</p>
+                <a href="#" class="button recipeBtn">▶ READ MORE</a>
+            </div>
+
+            <div class="recipeInfo">
+                <h2>Lemon Pepper Beer Can Chicken</h2>
+                <p>
+                    A weeknight staple that will never let you down!
+                </p>
+                <p class="moreInfo">Prep time: 2.5 hours</p>
+                <p class="costP moreInfo">Cost: $$</p>
+                <a href="#" class="button recipeBtn">▶ READ MORE</a>
+            </div>
+        </section>
+
+        <section class="recipeContainer hidden">
+            <div class="recipeInfo">
+                <h2>Smash Burgers</h2>
+                <p>
+                    A weeknight staple that will never let you down!
+                </p>
+                <p class="moreInfo">Prep time: 1 hour</p>
+                <p class="costP moreInfo">Cost: $$</p>
+                <a href="#" class="button recipeBtn">▶ READ MORE</a>
+            </div>
+        </section>
+
+        <section class="recipeContainer hidden">
+            <h2>PORK RECIPES</h2>
+            <div class="recipeInfo">
+                <h2>Crispy Pork Belly</h2>
+                <p>
+                    A weeknight staple that will never let you down!
+                </p>
+                <p class="moreInfo">Prep time: 1 hour</p>
+                <p class="costP moreInfo">Cost: $$</p>
+                <a href="#" class="button recipeBtn">▶ READ MORE</a>
+            </div>
+        </section>
+
+        <section class="recipeContainer hidden">
+            <h2>FISH RECIPES</h2>
+            <div class="recipeInfo">
+                <h2>Crispy Pork Belly</h2>
+                <p>
+                    A weeknight staple that will never let you down!
+                </p>
+                <p class="moreInfo">Prep time: 1 hour</p>
+                <p class="costP moreInfo">Cost: $$</p>
+                <a href="#" class="button recipeBtn">▶ READ MORE</a>
+            </div>
+        </section>
+
+        <!-- blog section to look nice  -->
         <section id="blog">
             <h2>THE BLOG</h2>
             <p>
                 We post weekly blogs about tips and tricks
                  to mastering live fire cooking. Explore some our recent blogs…  
             </p>
-            <button>▶ RECENT POST</button>
+            <button id="blogBtn">▶   RECENT POST</button>
         </section>
 
+        <!-- newsletter section for looks  -->
         <section id="newsletter">
             <h2>WEEKLY NEWSLETTER</h2>
             <p>
                 We send out weekly newsletters
                  via email about what is new in the smoking and barbecue world. Join our mailing list TODAY!   
             </p>
-            <button>▶ SIGN UP</button>
+            <button id="newsBtn">▶   SIGN UP</button>
         </section>
     </main>
         
