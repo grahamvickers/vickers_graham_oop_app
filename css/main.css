@@ -145,6 +145,7 @@ nav ul{
 
 .button:hover{
     background-color: #3D464F;
+    cursor: pointer;
 }
 
 .recipeCon img{
@@ -154,12 +155,12 @@ nav ul{
 
 /* gallery area */
 
-#gallery
+#recpGallery
 {
 	position: relative;
 	margin-top: 60px;
 }
-#galImage{
+#imgGallery{
     width: 100%;
     margin: 0 auto;
     justify-content: center;

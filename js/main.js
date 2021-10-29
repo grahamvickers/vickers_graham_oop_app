@@ -95,13 +95,13 @@
 
     // photo gallery for landing section 
 
-    (function gallery() {
+    (function landingGallery() {
 		let count = 0;
 		let img = ["brisket","chicken_platter","sausage"];
 
 		const back = document.querySelector("#back");
 		const frwd = document.querySelector("#frwd");
-		let foodImg = document.querySelector("#galImage");
+		let foodImg = document.querySelector("#imgGallery");
 
 		    function frwdImg()	{
 			count++;
