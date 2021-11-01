@@ -1,6 +1,6 @@
 # Graham Vickers OOP JS App
 
-This is my week 8 OOP JS App that has the functions of a photo gallery and partially working dynamic content.
+With this application i have created a food photography portfolio section into my developing food recipe and blog site. These photos are delivered through es6 js functions and methods. 
 
 
 ## Getting Started
@@ -15,7 +15,7 @@ You will need to install the following in order to run the website:
 copy and paste the following into your terminal: 
 
 ```
-$ git clone https://github.com/grahamvickers/vickers_graham_js_game.git
+$ git clone 
 ```
 
 #### Deployment 
