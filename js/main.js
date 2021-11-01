@@ -56,7 +56,7 @@
 		}
 		portfolioPiece() {
 			return (`
-					<img src="./images/${this.img}" />
+					<img src="./images/${this.img}" id="portImg"/>
 					<h3>${this.title}</h3>
 					<h4>${this.recipe}</h4>
 					<p>${this.bio}</p>

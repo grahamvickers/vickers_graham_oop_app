@@ -16,12 +16,25 @@ h2 {
     margin-bottom: 30px;
 }
 h3 {
+    font-family: cinder, sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    font-style: normal;
+    color: #BF5630;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+h4 {
     font-family: 'neuzeit-grotesk', sans-serif;
+    font-size: 22px;
     font-weight: 400;
     font-style: normal;
     color: #403E3A;
     line-height: 30px;
+    font-size: 22px;
 }
+
 p {
     font-family: 'neuzeit-grotesk', sans-serif;
     font-weight: 400;
@@ -103,6 +116,20 @@ nav ul{
 
 #landing{
     margin-bottom: 30px;
+}
+
+/* this is the portfolio area  */
+#portfolio{
+    padding: 30px 40px 30px 40px;
+}
+
+#portfolioCon p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#portImg{
+    width: 80%;
 }
 
 /* all index recipes content */
